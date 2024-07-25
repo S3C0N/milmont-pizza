@@ -1,0 +1,226 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f9fa;
+    color: #333;
+}
+
+header {
+    background: url('images/pizza-background.png') no-repeat center center/cover;
+    color: white;
+    padding: 20px 0;
+}
+
+.header-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: auto;
+    padding: 0 20px;
+}
+
+.title-container {
+    text-align: center;
+}
+
+.title-container h1 {
+    font-size: 2.5em;
+    margin: 0;
+    color: black; /* Change the text color to black */
+    font-weight: bold; /* Make the text bold */
+    text-shadow: 2px 2px #ffffff; 
+}
+
+.title-container p {
+    font-size: 1.2em;
+    margin: 5px 0 0;
+    color: black
+}
+
+nav {
+    display: flex;
+    align-items: center;
+}
+
+nav button {
+    margin: 0 10px;
+    padding: 10px 20px;
+    background-color: #b30000; /* Tomato sauce color */
+    border: none;
+    color: white;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+nav button:hover {
+    background-color: #ffdd57;
+    color: #b30000;
+}
+
+#content {
+    padding: 20px;
+    text-align: center;
+}
+
+/* Other existing styles */
+
+.home {
+    max-width: 800px;
+    margin: auto;
+}
+
+.home h2 {
+    color: #ff4500;
+    margin-bottom: 20px;
+}
+
+.home .logo {
+    max-width: 150px;
+    margin-bottom: 20px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.home .carousel-container {
+    position: relative;
+    width: 100%;
+    margin: 20px auto;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.home .carousel-slide {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.home .carousel-slide img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.home .prev, .home .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    user-select: none;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 50%;
+}
+
+.home .next {
+    right: 10px;
+}
+
+.home .prev {
+    left: 10px;
+}
+
+.home .prev:hover, .home .next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.home .dots-container {
+    text-align: center;
+    padding: 20px;
+}
+
+.home .dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.home .active, .home .dot:hover {
+    background-color: #717171;
+}
+
+.info-box {
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+.contact-info, .hours-info {
+    text-align: left;
+}
+
+.contact-info h3, .hours-info h3 {
+    color: #ff4500;
+}
+
+.contact-info p, .hours-info ul li {
+    font-size: 16px;
+}
+
+.hours-info ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.hours-info ul li {
+    padding: 5px 0;
+}
+
+.menu {
+    max-width: 800px;
+    margin: auto;
+    text-align: left;
+}
+
+.menu h2 {
+    text-align: center;
+    color: #ff4500;
+    margin-bottom: 20px;
+}
+
+.menu-category {
+    margin-bottom: 20px;
+}
+
+.menu-category h3 {
+    color: #d52b1e;
+    border-bottom: 2px solid #d52b1e;
+    padding-bottom: 5px;
+}
+
+.menu-category ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.menu-category ul li {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0;
+    font-size: 18px;
+}
+
+.menu-category ul li .item-name {
+    font-weight: bold;
+}
+
+.menu-category ul li .item-price {
+    color: #ff4500;
+}
